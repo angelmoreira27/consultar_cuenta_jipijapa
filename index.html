@@ -45,7 +45,6 @@
     <h2>Buscar Contrato</h2>
     <select id="selectdato" name="selectdato" class="form-control">
       <option value="1">Contrato</option>
-      <option value="2">Producto</option>
     </select>
     <br>
     <input class="form-control" id="inputContrato" type="text" placeholder="Ingrese el número de contrato">
@@ -74,10 +73,8 @@
 
     let scriptUrl = "";
     if (selectElement.value === "1") {
-      scriptUrl = "https://script.google.com/macros/s/AKfycbyKKuLai0Jfd3V1mIVi9IVBV5yUVb9yjyl6Hk0fC_uMboEb0AqMW-yye_lbot7WHIV1/exec?contrato=" + valoringresar + "&producto=";
-    } else {
-      scriptUrl = "https://script.google.com/macros/s/AKfycbyKKuLai0Jfd3V1mIVi9IVBV5yUVb9yjyl6Hk0fC_uMboEb0AqMW-yye_lbot7WHIV1/exec?contrato=&producto=" + valoringresar;
-    }
+      scriptUrl = "https://script.google.com/macros/s/AKfycbyM45AVm9qAtz8axQ76WeaEcK3K4bd95wYcvF1iDq6rzr0It3108DzYRszqwpNhCQDZ/exec?contrato=" + valoringresar + "&producto=";
+    } 
 
     // Esperar 0.5 segundos y luego redireccionar
     setTimeout(() => {
@@ -88,3 +85,4 @@
   </body>
 
 </html>
+
